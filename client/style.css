@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+
+* {
+    font-family: "Alegreya Sans", sans-serif;
+    margin: 0;
+}
+h1 {
+    font-size: 52px;
+    font-family: 'Gambetta', serif;
+    letter-spacing: -1px;
+    transition: 700ms ease;
+    color: #eee8aa;
+    outline: none;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+body {
+    min-height: 100%;
+    background: #323132;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+textarea {
+    color: #aca6a6;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    overflow: visible;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    width: auto;
+}
+
+.userBox {
+    width: 80%;
+    height: 30vh;
+    background-color: rgb(76, 76, 79);
+    max-width: 900px;
+    min-height: 250px;
+    resize: none;
+}
+.AiBox {
+    width: 80%;
+    height: 45vh;
+    background-color: rgb(60, 60, 62);
+    max-width: 900px;
+    min-height: 250px;
+    resize: none;
+}
+
+.button {
+    background-color: rgb(34, 34, 36);
+    width: 30%;
+    height: 10%;
+    max-width: 220px;
+    min-height: 55px;
+    min-width: 100px;
+    outline: 0;
+    border: 0;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+}
+.button p {
+    color: whitesmoke;
+    font-size: 20px;
+}
+.button:disabled{
+    background-color: #151516;
+    box-shadow: none;
+    width: 15%;
+    border-radius: 5%;
+    animation: bounce 2s 0.25s linear infinite;
+}
+.button:hover.button:enabled {
+    background-color: rgb(42, 42, 43);
+}
+.button:active {
+    background-color: #151516;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+@keyframes bounce {
+    0% {
+        transform: translate(0%)
+    }
+    25% {
+        transform: translate(-150%)
+    }
+    50% {
+        transform: translate(0%)
+    }
+    75% {
+        transform: translate(150%)
+    }
+}
+
+hr {
+    height: 2px;
+    background:#3c3b3c;
+    border: none;
+    outline: none;
+    margin: 1em 2em 0.5em;
+    position: relative;
+  }
+
+.footer{
+    width: 100%;
+}
+.footer_contents {
+    color: black;
+    margin:auto;
+    text-align: center;
+    font-size: smaller;
+}
