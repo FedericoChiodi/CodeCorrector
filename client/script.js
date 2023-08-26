@@ -1,4 +1,4 @@
-const serverIP = 'https://codexcorrector.onrender.com';
+const serverIP = 'http://localhost:5000';
 
 const form = document.querySelector('form');
 const responseArea = document.getElementById('responseArea');
@@ -28,7 +28,7 @@ const handleSubmit = async (e) => {
 
   if (data.get('prompt') !== ""){
     button.innerHTML = ""
-    responseArea.innerHTML = "Codex sta pensando ..."
+    responseArea.innerHTML = "CodeCorrector sta pensando ..."
     const response = await fetch(serverIP, {
       method: 'POST',
       headers: {

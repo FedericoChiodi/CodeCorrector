@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="it">
+
   <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="icon.ico" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <title id="title">CodexCorrector</title>
+    <title id="title">CodeCorrector</title>
   </head>
+
   <body>
-    <h1>CodexCorrector</h1>
-    <form>
-      <textarea name="prompt" class="userBox" placeholder="Incolla qui il tuo codice"></textarea>
-      <button id="submitButton" class="button" type="submit">
-        <p>Analizza</p>
-      </button>
-      <textarea readonly id="responseArea" class="AiBox" placeholder="Codex è in ascolto ..."></textarea>
-    </form>
-    <hr>
-    <div class="footer">
-      <div class="footer_contents">© Copyright 2023 - Federico Chiodi</div>
-    </div>
+    <main>
+      <section id="AppTitleSection">
+        <h1 class="AppTitle">CodeCorrector</h1>
+      </section>
+
+      <section id="FormSection">
+        <form name="mainForm" method="post">
+          <textarea name="prompt" class="userBox" placeholder="Incolla qui il tuo codice"></textarea>
+          <button name="submitButton" id="submitButton" class="button" type="submit">
+            <p>Analizza</p>
+          </button>
+          <textarea readonly id="responseArea" class="AiBox" placeholder="CodeCorrector è in ascolto ..."></textarea>
+        </form>
+      </section>
+
+      <hr class="separator">
+    </main>
+
+    <footer>
+      <div class="footer_contents">CodeCorrector - powered by OpenAI</div>
+    </footer>
+    
     <script type="module" src="script.js"></script>
   </body>
 </html>
