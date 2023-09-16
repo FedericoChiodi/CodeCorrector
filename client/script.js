@@ -1,4 +1,4 @@
-const serverIP = 'http://localhost:5000';
+const serverIP = 'https://codecorrector.onrender.com/';
 
 const form = document.querySelector('form');
 const responseArea = document.getElementById('responseArea');
